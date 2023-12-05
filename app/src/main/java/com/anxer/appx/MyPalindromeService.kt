@@ -8,11 +8,12 @@ class MyPalindromeService : Service() {
 
     private var binder = object : IvAidlInterface.Stub() {
         override fun getUseremailName(name: String): String {
-            return name.reversed().toString()
+            return name.reversed()
         }
     }
 
     override fun onBind(p0: Intent?): IBinder {
         return binder
     }
+
 }

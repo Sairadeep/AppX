@@ -11,5 +11,4 @@ interface IvAidlInterface {
 
      // Change the name to sendUseremailName
     String getUseremailName(String name);
-
       }
